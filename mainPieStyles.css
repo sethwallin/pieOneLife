@@ -1,0 +1,25 @@
+body {
+	background-image: url('chalkboardBG.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: regChalk;
+	color: white;
+	font-size: 80pt;
+}
+
+@font-face {
+    font-family: regChalk;
+    src: url('EraserRegular.ttf');
+}
+
+@font-face {
+    font-family: dustChalk;
+    src: url('EraserDust.ttf');
+}
+
+p {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
