@@ -1,20 +1,14 @@
 body {
-	background-image: url('chalkboardBG.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-family: regChalk;
-	color: white;
-	font-size: 80pt;
 }
 
 @font-face {
-    font-family: regChalk;
-    src: url('EraserRegular.ttf');
+	font-family: siteText;
+	src: url('siteText.otf');
 }
 
 @font-face {
-    font-family: dustChalk;
-    src: url('EraserDust.ttf');
+	font-family: siteTextI;
+	src: url('siteTextI.otf');
 }
 
 p {
@@ -22,4 +16,61 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}
+
+#logo {
+	border-radius: 50% 50% 0 0;
+	width: 156px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#home {
+	font-size: 44px;
+}
+
+.navBar {
+	background-color: #FEF31B;
+	display: grid;
+	text-align: center;
+	align-items: end;
+	grid-template-columns: 1fr 196px 1fr;
+	border-radius: 0 0 0 12px;
+
+}
+
+nav {
+	width: 100%;
+	font-family: siteText;
+	font-size: 34px;
+	position: fixed;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #FEF31B;
+	justify-self: start;
+}
+
+.leftNav {
+	justify-self: end;
+}
+
+nav li {
+	display: inline;
+}
+
+.navBar a {
+	color: black;
+	display: inline-block;
+	padding: 8px 16px;
+	text-decoration: none;
+	border-bottom: 2px solid #FEF31B;
+}
+
+.navBar a:hover {
+	border-bottom: 2px solid black;
 }
