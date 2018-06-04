@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	min-width: 953;
 }
 
 @font-face {
@@ -27,11 +28,13 @@ p {
 }
 
 #logo {
-	border-radius: 50% 50% 0 0;
+	border-radius: 0 0 0 0;
 	width: 156px;
 	display: block;
-	margin-left: auto;
+	top: 70;
 	margin-right: auto;
+	margin-left: auto;
+	position: relative;
 }
 
 #home {
@@ -81,6 +84,7 @@ nav {
 	font-size: 34px;
 	position: fixed;
 	background-color: #FFF;
+	min-width: 949;
 }
 
 ul {
