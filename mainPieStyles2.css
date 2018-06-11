@@ -1,6 +1,10 @@
 body {
 	margin: 0;
-	min-width: 953;
+	min-width: 1000;
+	text-align: center;
+	font-family: arial;
+	border-right: 2px solid black;
+
 }
 
 @font-face {
@@ -11,51 +15,6 @@ body {
 @font-face {
 	font-family: siteTextI;
 	src: url('fonts/siteTextI.otf');
-}
-
-.slides {
-	position: absolute;
-	width: auto;
-	height: 100%;
-	opacity: 0;
-}
-
-p.testText {
-	width: 50%;
-	position: relative;
-	top: 500;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	font-size: 18px;
-}
-
-#body {
-	width: 1000px;
-	margin: auto;
-	position: relative;
-	top: 120;
-	z-index: -1;
-	min-width: 953;
-	text-align: center;
-}
-
-#logo {
-	position: relative;
-	float: left;
-	z-index: 2;
-	display: inline;
-	grid-row: 1 / 3;
-}
-
-.slideShow {
-	position: absolute;
-	display: block;
-	left: 350;
-	top: 50;
-	width: 500;
-	height: 400;
-	border-left: 1px solid black;
 }
 
 h1 {
@@ -76,23 +35,15 @@ h1 {
 	padding: 9.5px 16px;
 }
 
-.navBar {
-	background-color: #FEF31B;
-	display: inline;
-	text-align: center;
-	border-bottom: 2.5px solid black;
-	height: 83px;
-}
-
 .logoConcealer {
 	background-image: url("photos/concealerBG.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: left top;
 	width: 100%;
-	height: 800px;
+	height: 550px;
 	position: absolute;
-	z-index: 3;
+	z-index: 6;
 	border-bottom: 2.5px solid black;
 }
 
@@ -104,7 +55,15 @@ nav {
 	font-size: 34px;
 	position: fixed;
 	min-width: 949;
-	z-index: 1;
+	z-index: 5;
+}
+
+.navBar {
+	background-color: #FEF31B;
+	display: inline;
+	text-align: center;
+	border-bottom: 2.5px solid black;
+	height: 83px;
 }
 
 ul {
@@ -127,4 +86,95 @@ nav li {
 
 .navBar a:hover {
 	border-bottom: 4px solid #807a26;
+}
+
+#topLeftLogo {
+	position: relative;
+	float: left;
+	z-index: 3;
+	display: inline;
+	grid-row: 1 / 3;
+}
+
+#bigLogoBox {
+	width: 1000px;
+	margin: auto;
+	position: relative;
+	top: 120;
+	z-index: 2;
+	min-width: 953;
+	text-align: center;
+}
+
+#kingston {
+	background-image: url("photos/kingston.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+	min-width: 600;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 550;
+	z-index: -2;
+	border-bottom: 2.5px solid black;
+}
+
+#examples {
+	background-color: white;
+	width: 100%;
+	height: 300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: absolute;
+	top: 755;
+	z-index: -1;
+	border-bottom: 2.5px solid black;
+}
+
+.slideShow {
+	justify-self: start;
+	align-self: center;
+	height: 275;
+	width: 275;
+	display: inline;
+}
+
+.slides {
+	height: 250;
+	width: 250;
+	display: inline;
+	text-align: center;
+	padding: 12.5;
+}
+
+#examples > p {
+	justify-self: end;
+	align-self: center;
+	text-align: center;
+	width: 300;
+}
+
+#flea1 {
+	background-image: url("photos/flea2.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	top: 1058;
+	z-index: -1;
+	border-bottom: 2.5px solid black;
+}
+
+p {
+	width: 600;
+	padding: 15;
+	background-color: #FFF;
 }
