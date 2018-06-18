@@ -27,7 +27,7 @@ a {
 	src: url('fonts/siteTextI.otf');
 }
 
-h1, h2, label {
+h1, h2 {
 	font-family: siteTextI;
 }
 
@@ -58,7 +58,6 @@ h1, h2, label {
 
 nav {
 	width: 100%;
-	top: 0px;
 	display: grid;
 	grid-template: 1fr 1fr / 150px 1fr;
 	font-family: siteText;
@@ -216,8 +215,8 @@ nav li {
 }
 
 .chefPhoto {
-	height: 325px;
-	width: 242px;
+	height: 480px;
+	width: 358px;
 	display: inline;
 	text-align: center;
 	padding: 12.5px;
@@ -233,66 +232,6 @@ nav li {
 
 #aboutTheChef > div > p {
 	width: 300px;
-}
-
-#contact {
-	width: 400px;
-	margin: 0px auto;
-	position: relative;
-	top: 120px;
-	z-index: 2;
-	text-align: left;
-}
-
-input, textarea {
-	font-size: 12pt;
-	line-height: 1.6;
-	width: 150px;
-}
-
-textarea {
-	width: 300px;
-}
-
-
-label {
-	font-size: 16pt;
-}
-
-footer {
-	text-align: center;
-	position: absolute;
-	top: 1958px;
-	padding: 15px;
-	background-color: #FEF31B;
-	border-top: 2px solid black;
-	width: 100%;
-	display: grid;
-	grid-template: 1fr 1fr / 200px 200px 200px;
-	grid-column-gap: 20px;
-	justify-content: center;
-	font-family: siteTextI;
-	font-size: 16pt;
-}
-
-.contactLogo {
-	height: 50px;
-	width: 50px;
-	display: inline;
-	justify-self: center;
-	align-self: center;
-}
-
-footer a {
-	color: black;
-	display: inline-block;
-	text-decoration: none;
-	border-bottom: 4px solid #FEF31B;
-}
-
-footer a:hover {
-	border-bottom: 4px solid #807a26;
-	padding-bottom: 5px;
 }
 
 p {

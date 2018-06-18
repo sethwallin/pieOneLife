@@ -10,5 +10,19 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1} 
     x[slideIndex-1].style.display = "inline"; 
-    setTimeout(carousel, 3000); // Change image every 2 seconds
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+
+function smoothScroll(section) {
+	var scrollSection = document.getElementById(section);
+	scrollSection.scrollIntoView({behavior: 'smooth', start: 'block'});
+}
+
+function ValidateEmail(mail) {
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
 }

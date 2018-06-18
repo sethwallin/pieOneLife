@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="mainPieStyles.css">
+	</head>
+
+	<body>
+		<nav>
+			<img id="topLeftLogo" src="photos/untitled.png">
+			
+			<div class="navBar">
+				<ul>
+					<li><a id="home" href="index.html">Pie On Life</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="index.html#aboutTheChef">About the Chef</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div></div>
+		</nav>
+
+		<div id="contact">
+
+			<h1>Contact Us</h1>
+
+			<p>
+				Please include your name, e-mail address, and a short description of your event, including, if possible, the date & time, location, and type of event.
+			</p>
+
+		    <form method="post" action="contact.php">
+		        <label>Name:</label><br>
+		        <input name="sender"><br><br>
+
+		        <label>Email address:</label><br>
+		        <input name="senderEmail"><br><br>
+
+		        <label>Message:</label><br>
+		        <textarea rows="5" name="message"></textarea><br><br>
+
+		        <input type="submit" name="submit" value="Send">
+		    </form>
+		</div>
+
+	</body>
+	<script src="index.js"></script>
+</html>
